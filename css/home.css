@@ -33,12 +33,16 @@
 
 .features__container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-right: 2px solid;
   border-color: var(--gray);
   height: 120px;
+}
+
+/* modifier display:flex */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .features__container:last-of-type {
