@@ -101,3 +101,155 @@ article {
     margin-top: 20px;
   }
 }
+/* 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!THIS IS A TEST UNDER ALL OF THIS */
+
+/* Content Styles */
+.content {
+  margin: 0 auto;
+  max-width: 714px;
+  text-align: center;
+}
+
+.content__title {
+  color: var(--purple);
+}
+
+.content__desc {
+  color: var(--gray);
+}
+
+.content__create-btn {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 17px 45px;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+  border-radius: 100px;
+  margin-top: 59px;
+}
+
+/* Features Class Styles  */
+.features {
+  display: flex;
+  margin-top: 111px;
+  margin-bottom: 200px;
+}
+
+.features__container {
+  width: 100%;
+  border-right: 2px solid;
+  border-color: var(--gray);
+  height: 120px;
+}
+
+/* modifier display:flex */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__container:last-of-type {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .features__container {
+    margin-bottom: 150px;
+    border: none;
+  }
+}
+
+.container__img {
+  max-width: 200px;
+  width: 100%;
+  display: block;
+}
+
+.container__info {
+  margin-top: 20px;
+  width: 230px;
+  text-align: center;
+}
+.prices {
+  text-align: center;
+}
+.prices__title {
+  color: var(--purple);
+}
+.prices__desc {
+  color: var(--gray);
+}
+
+.price-table {
+  margin: 0 auto;
+  border: 2px solid;
+  border-color: var(--gray);
+}
+
+th,
+td {
+  border: 2px solid;
+  border-color: var(--gray);
+  padding: 18px;
+  color: var(--purple);
+}
+
+th {
+  padding: 60px;
+}
+
+.no__border {
+  border: none;
+}
+
+.price button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 2px solid;
+  border-color: var(--gray);
+  border-radius: 30px;
+  color: var(--purple);
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.price button:hover {
+  background-color: var(--lightgreen);
+  border: none;
+}
+
+.tour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+  column-gap: 130px;
+}
+
+.aside {
+  max-width: 531px;
+  width: 100%;
+}
+
+.aside__title {
+  color: var(--purple);
+}
+.aside__btn {
+  background-color: var(--lightpurple);
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  padding: 17px 33px;
+  color: var(--white);
+  border-radius: 30px;
+  border: none;
+  margin-top: 52px;
+}
