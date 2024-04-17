@@ -1,0 +1,48 @@
+.prices {
+  text-align: center;
+}
+.prices__title {
+  color: var(--purple);
+}
+.prices__desc {
+  color: var(--gray);
+}
+
+.price-table {
+  margin: 0 auto;
+  border: 2px solid;
+  border-color: var(--gray);
+}
+
+th,
+td {
+  border: 2px solid;
+  border-color: var(--gray);
+  padding: 18px;
+  color: var(--purple);
+}
+
+th {
+  padding: 60px;
+}
+
+.no__border {
+  border: none;
+}
+
+.price button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 2px solid;
+  border-color: var(--gray);
+  border-radius: 30px;
+  color: var(--purple);
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.price button:hover {
+  background-color: var(--lightgreen);
+  border: none;
+}

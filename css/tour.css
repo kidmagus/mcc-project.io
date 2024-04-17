@@ -1,0 +1,27 @@
+.tour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+  column-gap: 130px;
+}
+
+.aside {
+  max-width: 531px;
+  width: 100%;
+}
+
+.aside__title {
+  color: var(--purple);
+}
+.aside__btn {
+  background-color: var(--lightpurple);
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  padding: 17px 33px;
+  color: var(--white);
+  border-radius: 30px;
+  border: none;
+  margin-top: 52px;
+}
