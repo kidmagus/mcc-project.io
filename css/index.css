@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+:root {
+  --purple: #1e0e62;
+  --gray: #15143966;
+  --light-green: #25dac5;
+  --pink: #e93a7d;
+  --white: #ffffff;
+}
+
+/* Header Class */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 50px;
+}
+
+.header__title {
+  color: var(--purple);
+  font-size: 24px;
+  line-height: 31.25px;
+  font-weight: 600;
+}
+
+.header__navs {
+  display: flex;
+  column-gap: 50px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.navs a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+/* -- should have section css styles here --  disregard*/
+
+.section__login,
+.section__signup {
+  border: none;
+  padding: 7px 18px;
+  font-size: 18px;
+}
+
+.section__login {
+  color: var(--light-green);
+  background: none;
+}
+
+.section__signup {
+  background-color: var(--light-green);
+  color: var(--white);
+  border-radius: 20px;
+}
+
+/* Content Styles */
+.content {
+  margin: 0 auto;
+  max-width: 714px;
+  text-align: center;
+}
+
+.content__title {
+  font-size: 58px;
+  line-height: 70px;
+  color: var(--purple);
+}
+
+.content__desc {
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--gray);
+}
+
+.content__create-btn {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 17px 45px;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+  border-radius: 100px;
+  margin-top: 59px;
+}
+
+/* Generic class for button pointer */
+.btn-pointer {
+  cursor: pointer;
+}
+
+/* Features Class Styles  */
+.features {
+  display: flex;
+  margin-top: 111px;
+  margin-bottom: 200px;
+}
+
+.features__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid;
+  border-color: var(--gray);
+  height: 120px;
+}
+
+.features__container:last-of-type {
+  border: none;
+}
+
+.container__img {
+  width: 200px;
+  display: block;
+}
+
+.container__info {
+  color: var(--gray);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  width: 230px;
+  text-align: center;
+}
