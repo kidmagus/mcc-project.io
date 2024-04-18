@@ -1,0 +1,93 @@
+body {
+  background: url(/mcc-project.io/img/support/bg.jpg);
+}
+
+.navs nav a {
+  color: var(--white);
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.support__title {
+  background-color: var(--white);
+  border-radius: 40px;
+  padding: 15px;
+  color: var(--purple);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 768px;
+  margin-bottom: 100px;
+}
+
+.support__authors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.author {
+  width: 100%;
+  padding: 26px 115px;
+  border-right: 2px solid;
+  border-color: var(--gray);
+  text-align: center;
+}
+
+.author__name {
+  color: var(--purple);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.author__img {
+  width: 160px;
+  border-radius: 50%;
+}
+
+.author:nth-child(3n + 0) {
+  border: none;
+}
+
+.link {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  list-style: none;
+  column-gap: 30px;
+  padding: 0;
+}
+
+.link li {
+  font-size: 30px;
+  color: var(--gray);
+  text-align: center;
+}
+
+.support__button {
+  align-self: center;
+  background: none;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 40px;
+  border: 2px solid;
+  border-color: var(--white);
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.support__button:hover {
+  border-color: var(--lightgreen);
+  color: var(--lightgreen);
+}

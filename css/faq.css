@@ -1,0 +1,58 @@
+.faq {
+  color: var(--lightpurple);
+  text-align: center;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--lightgreen);
+  border-radius: 20px;
+}
+
+.box {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.box__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.head__title {
+  color: var(--purple);
+}
+
+.head__span {
+  font-size: 24px;
+  height: 35px;
+  width: 35px;
+  background-color: var(--purple);
+  color: var(--white);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.box__info {
+  color: var(--darkblue);
+  font-weight: 800;
+  display: none;
+}
+
+.expanded .box__info {
+  display: block;
+}
+
+.expanded .head__span {
+  transform: rotate(90deg);
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+.expanded .head__title {
+  color: var(--lightpurple);
+}
