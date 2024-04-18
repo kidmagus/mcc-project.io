@@ -6,6 +6,16 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+label {
+  font-size: 14px;
+  line-height: 26px;
+}
+
 h2 {
   font-size: 58px;
   line-height: 70px;
@@ -28,7 +38,7 @@ article {
   line-height: 28px;
 }
 
-.btn-pointer {
+button {
   cursor: pointer;
 }
 
@@ -58,10 +68,14 @@ article {
 }
 
 .header__title {
-  color: var(--purple);
   font-size: 24px;
   line-height: 31.25px;
   font-weight: 600;
+}
+
+.header__title a {
+  text-decoration: none;
+  color: var(--purple);
 }
 
 .header__navs {
@@ -71,7 +85,7 @@ article {
   line-height: 22px;
 }
 
-.navs a {
+nav a {
   text-decoration: none;
   color: var(--gray);
 }
@@ -101,11 +115,17 @@ article {
     margin-top: 20px;
   }
 }
+
+.active {
+  border-bottom: 2px solid;
+  border-color: var(--lightgreen);
+  color: var(--lightgreen);
+}
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!THIS IS A TEST UNDER ALL OF THIS */
 
 /* Content Styles */
-.content {
+/* .content {
   margin: 0 auto;
   max-width: 714px;
   text-align: center;
@@ -131,7 +151,7 @@ article {
 }
 
 /* Features Class Styles  */
-.features {
+/* .features {
   display: flex;
   margin-top: 111px;
   margin-bottom: 200px;
@@ -145,7 +165,7 @@ article {
 }
 
 /* modifier display:flex */
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,4 +272,4 @@ th {
   border-radius: 30px;
   border: none;
   margin-top: 52px;
-}
+} */

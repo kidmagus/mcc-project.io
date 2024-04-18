@@ -1,0 +1,49 @@
+.about {
+  text-align: center;
+}
+.about__heading {
+  margin: 0 auto;
+  max-width: 740px;
+}
+
+.heading__title {
+  color: var(--purple);
+}
+
+.heading__info {
+  color: var(--gray);
+}
+
+.about__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 62px;
+}
+
+.section__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+}
+
+.grid__img {
+  width: 370px;
+  display: block;
+}
+
+.grid__title {
+  display: block;
+  color: var(--purple);
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.grid__info {
+  width: 400px;
+  color: var(--gray);
+}
