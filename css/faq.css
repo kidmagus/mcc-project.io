@@ -25,12 +25,14 @@
 
 .head__title {
   color: var(--purple);
+  width: 80%;
 }
 
 .head__span {
   font-size: 24px;
   height: 35px;
   width: 35px;
+
   background-color: var(--purple);
   color: var(--white);
   border-radius: 50%;

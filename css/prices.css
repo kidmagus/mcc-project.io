@@ -26,6 +26,16 @@ th {
   padding: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  td {
+    display: none;
+  }
+
+  th {
+    display: block;
+  }
+}
+
 .no__border {
   border: none;
 }
@@ -42,7 +52,149 @@ th {
   line-height: 26px;
 }
 
-.price button:hover {
+th:hover .price button {
   background-color: var(--lightgreen);
   border: none;
+}
+
+.payment {
+  margin: 0 auto;
+  max-width: 768px;
+  display: none;
+}
+
+.payment__chosenplan {
+  text-align: center;
+  font-size: 24px;
+  color: var(--darkblue);
+  font-weight: 600;
+}
+
+.payment__back-btn {
+  font-size: 10px;
+  color: var(--gray);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.payment__back-btn:hover {
+  color: red;
+}
+.payment__title {
+  text-align: center;
+  color: var(--purple);
+}
+
+.paypal,
+.credit {
+  padding: 60px;
+  border-radius: 18px;
+  border: 2px solid;
+  border-color: var(--gray);
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.title {
+  display: inline-block;
+  color: var(--purple);
+}
+
+.info {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.checkout {
+  padding: 13px 25px;
+  background-color: var(--lightgreen);
+  border: none;
+  border-radius: 20px;
+  color: var(--white);
+  font-size: 18px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+.prices.availed,
+.price-table.availed {
+  display: none;
+}
+
+.payment.availed {
+  display: block;
+}
+
+.credit__credentials {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 30px;
+  row-gap: 12px;
+  align-items: center;
+  padding: 20px;
+}
+
+.credentials__label {
+  font-size: 16px;
+  white-space: nowrap;
+
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: var(--purple);
+  font-weight: 800;
+}
+
+.credentials__number,
+.credentialst__name {
+  width: 100%;
+}
+
+.credentials__date {
+  width: 100%;
+}
+
+.credentials__cvv {
+  width: 100%;
+}
+
+.inputs {
+  font-size: 16px;
+  padding: 10px;
+  color: var(--darkblue);
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: var(--gray);
+}
+
+.email {
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .credit__credentials {
+    display: block;
+  }
+
+  .email {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.chosen.paypal,
+.chosen.credit {
+  border-color: var(--purple);
+  background-color: var(--lightgreen);
+  opacity: 1;
+}
+
+.chosen.checkout {
+  background-color: var(--purple);
+}
+
+.chosen .checkout:hover {
+  background-color: green;
 }

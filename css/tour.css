@@ -11,6 +11,17 @@
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .tour {
+    display: block;
+    text-align: center;
+  }
+
+  .aside {
+    margin-bottom: 200px;
+  }
+}
+
 .aside__title {
   color: var(--purple);
 }

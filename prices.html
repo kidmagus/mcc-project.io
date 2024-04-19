@@ -42,70 +42,115 @@
     </div>
 
     <table class="price-table">
-      <tr>
-        <th>
-          <div class="price-table__free price">
-            <h5>Free</h5>
-            <p>Forever Free</p>
-            <h2><span>$</span>0</h2>
-            <button class="btn-pointer">Get Started</button>
-          </div>
-        </th>
-        <th>
-          <div class="price-table__starter price">
-            <h5>Starter</h5>
-            <p>Perfect for Freelancers</p>
-            <h2><span>$</span>19</h2>
-            <button class="btn-pointer">Get Started</button>
-          </div>
-        </th>
-        <th>
-          <div class="price-table__pro price">
-            <h5>Pro</h5>
-            <p>Perfect for Small Team</p>
-            <h2><span>$</span>49</h2>
-            <button class="btn-pointer">Get Started</button>
-          </div>
-        </th>
-        <th>
-          <div class="price-table__premium price">
-            <h5>Premium</h5>
-            <p>Forever Free</p>
-            <h2><span>$</span>149</h2>
-            <button class="btn-pointer">Get Started</button>
-          </div>
-        </th>
-      </tr>
-      <tr>
-        <td>1GB of Space</td>
-        <td>10GB of Space</td>
-        <td>100 GB of Space</td>
-        <td>As Much as Space as Needed</td>
-      </tr>
-      <tr>
-        <td class="no__border"></td>
-        <td>Unlimited Projects</td>
-        <td>Unlimited Projects</td>
-        <td>Unlimited Projects</td>
-      </tr>
-      <tr>
-        <td class="no__border"></td>
-        <td>Unlimited Users</td>
-        <td>Unlimited Users</td>
-        <td>Unlimited Users</td>
-      </tr>
-      <tr>
-        <td class="no__border"></td>
-        <td class="no__border"></td>
-        <td>Unlimited Dates</td>
-        <td>Unlimited Dates</td>
-      </tr>
-      <tr>
-        <td class="no__border"></td>
-        <td class="no__border"></td>
-        <td class="no__border"></td>
-        <td>Unlimited File Recovery</td>
-      </tr>
+      <th data-tab-target="Free" class="price-table__head">
+        <div data-tab-price="Free" class="price-table__free price">
+          <h5>Free</h5>
+          <p>Forever Free</p>
+          <h2><span>$</span>0</h2>
+          <button>Get Started</button>
+        </div>
+      </th>
+      <th data-tab-target="Starter" class="price-table__head">
+        <div data-tab-price="Starter" class="price-table__starter price">
+          <h5>Starter</h5>
+          <p>Perfect for Freelancers</p>
+          <h2><span>$</span>19</h2>
+          <button>Get Started</button>
+        </div>
+      </th>
+      <th data-tab-target="Pro" class="price-table__head">
+        <div data-tab-price="Pro" class="price-table__pro price">
+          <h5>Pro</h5>
+          <p>Perfect for Small Team</p>
+          <h2><span>$</span>49</h2>
+          <button>Get Started</button>
+        </div>
+      </th>
+      <th data-tab-target="Premium" class="price-table__head">
+        <div data-tab-price="Premium" class="price-table__premium price">
+          <h5>Premium</h5>
+          <p>Forever Free</p>
+          <h2><span>$</span>149</h2>
+          <button>Get Started</button>
+        </div>
+      </th>
+
+      <tbody>
+        <tr>
+          <td>1GB of Space</td>
+          <td>10GB of Space</td>
+          <td>100 GB of Space</td>
+          <td>As Much as Space as Needed</td>
+        </tr>
+        <tr>
+          <td class="no__border"></td>
+          <td>Unlimited Projects</td>
+          <td>Unlimited Projects</td>
+          <td>Unlimited Projects</td>
+        </tr>
+        <tr>
+          <td class="no__border"></td>
+          <td>Unlimited Users</td>
+          <td>Unlimited Users</td>
+          <td>Unlimited Users</td>
+        </tr>
+        <tr>
+          <td class="no__border"></td>
+          <td class="no__border"></td>
+          <td>Unlimited Dates</td>
+          <td>Unlimited Dates</td>
+        </tr>
+        <tr>
+          <td class="no__border"></td>
+          <td class="no__border"></td>
+          <td class="no__border"></td>
+          <td>Unlimited File Recovery</td>
+        </tr>
+      </tbody>
     </table>
+
+    <div class="price__payment payment">
+      <h3 class="payment__title">Choose your Payment Method</h3>
+      <p class="payment__chosenplan"></p>
+      <span class="payment__back-btn"> < BACK</span>
+      <div class="payment__paypal paypal">
+        <input type="radio" name="chosen" class="paypal__radio radios" />
+        <article class="paypal__title title">PayPal</article>
+        <p class="paypal__info info">
+          Safe payment online. Credit card Needed. PayPal account is not
+          necessary.
+        </p>
+        <input
+          type="email"
+          class="paypal__email inputs email"
+          placeholder="Email address"
+        />
+        <button class="paypal__checkout checkout" disabled>Checkout</button>
+      </div>
+      <div class="payment__credit credit">
+        <input type="radio" name="chosen" class="credit__radio radios" />
+        <article class="credit__title title">Credit</article>
+        <p class="credit__info info">
+          Safe money transfer using your bank account.
+        </p>
+        <div class="credit__credentials credentials">
+          <label class="credentials__label">Credit Card Number</label>
+          <input type="number" class="credentials__number inputs" />
+
+          <label class="credentials__label">Expiration Date</label>
+          <input type="date" class="credentials__date inputs" />
+
+          <label class="credentials__label">Credit Card Holder</label>
+          <input type="text" class="credentialst__name inputs" />
+
+          <label class="credentials__label">CVV</label>
+          <input type="number" class="credentials__cvv inputs" />
+        </div>
+
+        <button class="credit__checkout checkout">Checkout</button>
+      </div>
+    </div>
+
+    <script src="js/prices.js"></script>
   </body>
 </html>

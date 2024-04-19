@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-top: 30px;
 }
 
 .support__title {
@@ -26,7 +27,6 @@ body {
 .support__authors {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   background-color: var(--white);
   padding: 20px;
   border-radius: 20px;
@@ -41,6 +41,18 @@ body {
   border-right: 2px solid;
   border-color: var(--gray);
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .support__authors {
+    display: block;
+  }
+
+  .author {
+    border-bottom: 2px solid;
+    border-right: none;
+    border-color: var(--gray);
+  }
 }
 
 .author__name {

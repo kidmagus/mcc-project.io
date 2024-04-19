@@ -28,7 +28,26 @@
 .features {
   display: flex;
   margin-top: 111px;
-  margin-bottom: 200px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 200px;
+}
+
+.features::-webkit-scrollbar {
+  width: 12px;
+}
+.features::-webkit-scrollbar-track {
+  background: var(--lightpurple);
+}
+
+.features::-webkit-scrollbar-thumb {
+  background: var(--lightpurple);
+}
+.features::-webkit-scrollbar-thumb:hover {
+  background: var(--purple);
+}
+.features::-webkit-scrollbar-button {
+  display: none;
 }
 
 .features__container {
