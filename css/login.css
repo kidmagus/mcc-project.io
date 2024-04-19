@@ -1,0 +1,86 @@
+body {
+  background-image: url(/mcc-project.io/img/login/bg.jpg);
+}
+
+.navs nav a {
+  color: var(--white);
+}
+
+.form {
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+  max-width: 768px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.form__title {
+  color: var(--purple);
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.form__inputs input {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: var(--white);
+  color: var(--darkblue);
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: var(--gray);
+  padding: 12px;
+  width: 370px;
+}
+
+.form__forgot {
+  color: var(--gray);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.form__forgot:hover {
+  opacity: 1;
+}
+
+.form__submit {
+  background-color: var(--lightgreen);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 10px 120px;
+  border: none;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 80px;
+  white-space: nowrap;
+}
+
+.form__agreement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.agreement__checkbox {
+  border-radius: 20px;
+}
+
+.agreement__info {
+  color: var(--gray);
+}
+
+.form__signup {
+  color: var(--lightpurple);
+  cursor: pointer;
+  text-decoration: underline;
+}

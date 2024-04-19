@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/generic.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="header">
+      <p class="header__title"><a href="home.html">Startup 3</a></p>
+      <div class="header__navs navs">
+        <nav class="navs__tour tour--nav"><a href="tour.html">Tour</a></nav>
+        <nav class="navs__prices prices--nav">
+          <a href="prices.html">Prices</a>
+        </nav>
+        <nav class="navs__about about--nav"><a href="about.html">About</a></nav>
+        <nav class="navs__faq faq--nav"><a href="faq.html">FAQ</a></nav>
+        <nav class="navs__support support--nav">
+          <a href="support.html">Support</a>
+        </nav>
+      </div>
+      <div class="header__auth-section section">
+        <a href="login.html"><button class="section__login">Log in</button></a>
+        <a href="signup.html"
+          ><button class="section__signup">Sign Up</button></a
+        >
+      </div>
+    </div>
+
+    <form class="form">
+      <h3 class="form__title">Sign In</h3>
+      <div class="form__inputs">
+        <input type="text" placeholder="Your Email" />
+        <input type="text" placeholder="Your Password" />
+      </div>
+
+      <p class="form__forgot">Forgot Password?</p>
+      <button class="form__submit">Sign In</button>
+      <p class="form__info">
+        Don't have an account?
+        <a href="signup.html"><span class="form__signup">Sign Up</span></a>
+      </p>
+    </form>
+  </body>
+</html>

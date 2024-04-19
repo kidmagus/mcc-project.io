@@ -109,6 +109,11 @@ nav a {
   background: none;
 }
 
+.section__login a,
+.section__signup a {
+  text-decoration: none;
+}
+
 .section__signup {
   background-color: var(--lightgreen);
   color: var(--white);
