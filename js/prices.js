@@ -1,34 +1,31 @@
-const prices = document.querySelectorAll(".price-table__head");
-const pricesTitle = document.querySelector(".prices");
-const pricesTable = document.querySelector(".price-table");
+const table = document.querySelector(".table");
+const description = document.querySelectorAll(".description");
 const payment = document.querySelector(".payment");
+const tabTarget = document.querySelectorAll("[data-tab-target]");
+const tabContents = document.querySelectorAll("[data-tab-price]");
+
 const back = document.querySelector(".payment__back-btn");
 
-prices.forEach((price) => {
-  const priceHead = price.querySelector(".price");
+description.forEach((descriptions) => {
+  const descButton = descriptions.querySelector(".description__button");
 
-  priceHead.addEventListener("click", () => {
-    pricesTitle.classList.add("availed");
-    pricesTable.classList.add("availed");
+  descButton.addEventListener("click", () => {
+    table.classList.add("availed");
     payment.classList.add("availed");
   });
 
   back.addEventListener("click", () => {
-    pricesTitle.classList.remove("availed");
-    pricesTable.classList.remove("availed");
+    table.classList.remove("availed");
     payment.classList.remove("availed");
   });
-});
 
-const tabTarget = document.querySelectorAll("[data-tab-target]");
-const tabContents = document.querySelectorAll("[data-tab-price]");
+  tabTarget.forEach((tabTargets) => {
+    const target = tabTargets.getAttribute("data-tab-target");
+    const plan = document.querySelector(".payment__chosenplan");
 
-tabTarget.forEach((tabTargets) => {
-  const target = tabTargets.getAttribute("data-tab-target");
-  const plan = document.querySelector(".payment__chosenplan");
-
-  tabTargets.addEventListener("click", () => {
-    plan.textContent = `Your chosen plan is ${target}! `;
+    tabTargets.addEventListener("click", () => {
+      plan.textContent = `Your chosen plan is ${target}! `;
+    });
   });
 });
 
@@ -38,6 +35,7 @@ const paypal = document.querySelector(".paypal");
 const credit = document.querySelector(".credit");
 const paypalBtn = document.querySelector(".paypal__checkout");
 const creditBtn = document.querySelector(".credit__checkout");
+
 paypal.addEventListener("click", () => {
   paypalRadio.checked = true;
   if (paypalRadio.checked) {

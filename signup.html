@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/loginsignup-generic.css" />
     <link rel="stylesheet" href="css/generic.css" />
+    <link rel="stylesheet" href="css/signup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,15 +44,82 @@
         <input type="text" placeholder="Your Password" />
       </div>
       <div class="form__agreement agreement">
-        <input type="checkbox" class="agreement__checkbox" />
-        <p class="agreement__info">I agree to the Terms of Service.</p>
+        <input type="checkbox" class="agreement__checkbox" disabled />
+        <p class="agreement__info">
+          <a href="#"> I agree to the Terms of Service.</a>
+        </p>
       </div>
 
       <button class="form__submit">Create Account</button>
       <p class="form__info">
         Don't have an account?
-        <a href="signup.html"><span class="form__signup">Sign Up</span></a>
+        <span class="form__signup">Sign Up</span>
       </p>
     </form>
+
+    <div class="term">
+      <h3 class="term__title">Terms and Conditions</h3>
+      <h5 class="term__subtitle">Your Agreement</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum at
+        voluptatem magni odio accusantium odit amet est! Nihil, deserunt neque?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In atque odio
+        voluptatum beatae nemo nulla voluptate. Eaque, sunt impedit quod maxime
+        amet minus possimus nulla rem accusantium quaerat ipsam quidem molestiae
+        corrupti facilis necessitatibus dolor eligendi incidunt voluptate
+        dignissimos nihil.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+        dolores ut repellat itaque ipsum aliquid quos! Similique, consequatur
+        eius fuga minus, exercitationem quidem hic suscipit cumque autem,
+        facilis eaque excepturi veritatis quibusdam consectetur. Perspiciatis
+        sit eum reiciendis, hic amet in repellendus saepe quibusdam impedit
+        autem blanditiis consectetur. Repellendus, sequi et unde, modi inventore
+        rem aut sint eligendi reiciendis quis rerum laborum necessitatibus!
+        Quos, hic fugit dolor quidem ad ex eveniet!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quasi
+        officiis quod culpa. Distinctio doloribus, iure tenetur accusantium
+        ducimus est, beatae suscipit assumenda alias fugiat optio sunt iusto,
+        necessitatibus animi laborum dolorem ullam aliquid velit adipisci saepe
+        quasi quisquam? Saepe distinctio rem facilis nulla quaerat magni,
+        incidunt mollitia tempora a repellat libero doloribus laborum adipisci.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia fugiat
+        dolor suscipit esse obcaecati sequi amet ratione saepe. Dolorem magnam
+        perspiciatis cum aut possimus debitis! Cumque minima excepturi dolorum
+        voluptatem nulla eligendi praesentium, accusantium dolor amet
+        necessitatibus, delectus nam enim voluptate ex officia. Error neque
+        dolorum totam ipsum sit assumenda? Cumque expedita vitae laboriosam!
+        Vitae saepe autem repellendus quibusdam unde beatae officia et alias
+        vero nobis! Qui molestiae error consectetur!
+      </p>
+      <br />
+      <br />
+      <br />
+
+      <div class="term__footer footer">
+        <div class="footer__agreement">
+          <input type="checkbox" class="term__checkbox" />
+          <h6>
+            I confirm that I have read and accepted the terms and conditions and
+            privacy policy.
+          </h6>
+        </div>
+
+        <div class="footer__button button">
+          <button class="button__cancel">Cancel</button>
+          <button class="button__accept" disabled>Accept</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/signup.js"></script>
   </body>
 </html>

@@ -8,53 +8,109 @@
   color: var(--gray);
 }
 
-.price-table {
-  margin: 0 auto;
+.table {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.table__container {
+  padding: 80px;
+  width: 100%;
+}
+
+.box {
   border: 2px solid;
-  border-color: var(--gray);
+  border-radius: 10px;
+  padding: 41px 55px 43px 48px;
+  text-align: center;
+  background-color: var(--purple);
+  color: var(--white);
+  border-color: var(--purple);
 }
 
-th,
-td {
-  border: 2px solid;
-  border-color: var(--gray);
-  padding: 18px;
-  color: var(--purple);
-}
-
-th {
-  padding: 60px;
-}
-
-@media screen and (max-width: 768px) {
-  td {
-    display: none;
-  }
-
-  th {
+@media screen and (max-width: 1200px) {
+  .table {
     display: block;
   }
+
+  .table__container {
+    border-bottom: 2px solid;
+    border-color: var(--lightpurple);
+  }
 }
 
-.no__border {
-  border: none;
+.box__label {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  display: block;
 }
 
-.price button {
-  width: 150px;
-  height: 50px;
-  background: none;
-  border: 2px solid;
+.box__fee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 28px;
+  white-space: nowrap;
+}
+
+.fee__desc {
+  text-align: center;
+}
+
+.box__desc {
+  font-weight: 400;
+  max-width: 257px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+.description {
+  margin: 0 auto;
+  max-width: 230px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description__item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  color: var(--gray);
+  text-align: center;
+}
+
+.description__button {
+  border: 1px solid;
   border-color: var(--gray);
-  border-radius: 30px;
   color: var(--purple);
+  border-radius: 18px;
+  margin-top: 30px;
+  background-color: var(--white);
+  padding: 12px 38px;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
 }
 
-th:hover .price button {
+.description__button:hover {
   background-color: var(--lightgreen);
-  border: none;
+  color: var(--white);
+  border-color: var(--lightgreen);
+}
+
+.item__checkmark {
+  color: var(--lightgreen);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hidden + p {
+  opacity: 60%;
 }
 
 .payment {
@@ -119,8 +175,7 @@ th:hover .price button {
   bottom: 15px;
 }
 
-.prices.availed,
-.price-table.availed {
+.table.availed {
   display: none;
 }
 

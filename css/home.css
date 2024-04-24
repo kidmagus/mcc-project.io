@@ -39,7 +39,6 @@
 .features::-webkit-scrollbar-track {
   background: var(--lightpurple);
 }
-
 .features::-webkit-scrollbar-thumb {
   background: var(--lightpurple);
 }

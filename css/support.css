@@ -36,23 +36,12 @@ body {
 }
 
 .author {
+  position: relative;
   width: 100%;
   padding: 26px 115px;
   border-right: 2px solid;
   border-color: var(--gray);
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .support__authors {
-    display: block;
-  }
-
-  .author {
-    border-bottom: 2px solid;
-    border-right: none;
-    border-color: var(--gray);
-  }
 }
 
 .author__name {
@@ -68,6 +57,19 @@ body {
 
 .author:nth-child(3n + 0) {
   border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .support__authors {
+    display: block;
+  }
+
+  .author:nth-child(3n + 0),
+  .author {
+    border-bottom: 2px solid;
+    border-color: var(--gray);
+    border-right: none;
+  }
 }
 
 .link {

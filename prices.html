@@ -6,6 +6,10 @@
     <title>Prices</title>
     <link rel="stylesheet" href="css/generic.css" />
     <link rel="stylesheet" href="css/prices.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,73 +47,145 @@
       </h5>
     </div>
 
-    <table class="price-table">
-      <th data-tab-target="Free" class="price-table__head">
-        <div data-tab-price="Free" class="price-table__free price">
-          <h5>Free</h5>
-          <p>Forever Free</p>
-          <h2><span>$</span>0</h2>
-          <button>Get Started</button>
+    <div class="table">
+      <div data-tab-price="start" class="table__container start">
+        <div class="start__box box">
+          <label class="box__label">START</label>
+          <div class="box__fee fee">
+            <h2>$19</h2>
+            <div class="fee__desc">
+              <p>per user</p>
+              <p>per month</p>
+            </div>
+          </div>
+          <p class="box__desc">
+            All the features you need to keep your personal files safe,
+            accessible, and easy to share.
+          </p>
         </div>
-      </th>
-      <th data-tab-target="Starter" class="price-table__head">
-        <div data-tab-price="Starter" class="price-table__starter price">
-          <h5>Starter</h5>
-          <p>Perfect for Freelancers</p>
-          <h2><span>$</span>19</h2>
-          <button>Get Started</button>
+        <div class="start__description description">
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>2GB of Hosting Space</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>14 days of free backups</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark hidden"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>Social integrations</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark hidden"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>Advanced client billing</p>
+          </div>
+          <button data-tab-target="Start" class="description__button">
+            Start Free Trial
+          </button>
         </div>
-      </th>
-      <th data-tab-target="Pro" class="price-table__head">
-        <div data-tab-price="Pro" class="price-table__pro price">
-          <h5>Pro</h5>
-          <p>Perfect for Small Team</p>
-          <h2><span>$</span>49</h2>
-          <button>Get Started</button>
+      </div>
+      <div data-tab-price="enterprise" class="table__container enterprise">
+        <div class="enterprise__box box">
+          <label class="box__label">enterprise</label>
+          <div class="box__fee fee">
+            <h2>$49</h2>
+            <div class="fee__desc">
+              <p>per user</p>
+              <p>per month</p>
+            </div>
+          </div>
+          <p class="box__desc">
+            All the features you need to keep your personal files safe,
+            accessible, and easy to share.
+          </p>
         </div>
-      </th>
-      <th data-tab-target="Premium" class="price-table__head">
-        <div data-tab-price="Premium" class="price-table__premium price">
-          <h5>Premium</h5>
-          <p>Forever Free</p>
-          <h2><span>$</span>149</h2>
-          <button>Get Started</button>
+        <div class="enterprise__description description">
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>2GB of Hosting Space</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>14 days of free backups</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>Social integrations</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark hidden"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>Advanced client billing</p>
+          </div>
+          <button data-tab-target="Enterprise" class="description__button">
+            Start Free Trial
+          </button>
         </div>
-      </th>
+      </div>
+      <div data-tab-price="premium" class="table__container premium">
+        <div class="premium__box box">
+          <label class="box__label">premium</label>
 
-      <tbody>
-        <tr>
-          <td>1GB of Space</td>
-          <td>10GB of Space</td>
-          <td>100 GB of Space</td>
-          <td>As Much as Space as Needed</td>
-        </tr>
-        <tr>
-          <td class="no__border"></td>
-          <td>Unlimited Projects</td>
-          <td>Unlimited Projects</td>
-          <td>Unlimited Projects</td>
-        </tr>
-        <tr>
-          <td class="no__border"></td>
-          <td>Unlimited Users</td>
-          <td>Unlimited Users</td>
-          <td>Unlimited Users</td>
-        </tr>
-        <tr>
-          <td class="no__border"></td>
-          <td class="no__border"></td>
-          <td>Unlimited Dates</td>
-          <td>Unlimited Dates</td>
-        </tr>
-        <tr>
-          <td class="no__border"></td>
-          <td class="no__border"></td>
-          <td class="no__border"></td>
-          <td>Unlimited File Recovery</td>
-        </tr>
-      </tbody>
-    </table>
+          <div class="box__fee fee">
+            <h2>$99</h2>
+            <div class="fee__desc">
+              <p>per user</p>
+              <p>per month</p>
+            </div>
+          </div>
+
+          <p class="box__desc">
+            All the features you need to keep your personal files safe,
+            accessible, and easy to share.
+          </p>
+        </div>
+        <div class="premium__description description">
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>2GB of Hosting Space</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>14 days of free backups</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>Social integrations</p>
+          </div>
+          <div class="description__item">
+            <span class="item__checkmark"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <p>Advanced client billing</p>
+          </div>
+          <button data-tab-target="Premium" class="description__button">
+            Start Free Trial
+          </button>
+        </div>
+      </div>
+    </div>
 
     <div class="price__payment payment">
       <h3 class="payment__title">Choose your Payment Method</h3>
