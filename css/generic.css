@@ -150,7 +150,7 @@ Footer Section */
   margin-top: 200px;
 }
 
-.footer__input {
+.main__input {
   max-width: 230px;
   max-height: 40px;
   width: 100%;
@@ -167,7 +167,7 @@ Footer Section */
   line-height: 22px;
 }
 
-.footer__subscribe {
+.main__subscribe {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -178,7 +178,7 @@ Footer Section */
   padding: 9px 21px;
 }
 
-.footer__subscribe:hover {
+.main__subscribe:hover {
   background-color: #0a6c61;
 }
 
