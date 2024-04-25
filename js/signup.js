@@ -9,6 +9,7 @@ const cancelButton = document.querySelector(".button__cancel");
 cancelButton.addEventListener("click", () => {
   term.classList.remove("display");
   form.classList.remove("display");
+  agreeChkbox.checked = false;
 });
 
 agreeInfo.addEventListener("click", () => {
