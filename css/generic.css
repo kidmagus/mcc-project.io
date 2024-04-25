@@ -4,6 +4,7 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+  margin: 0;
 }
 
 p {
@@ -134,4 +135,76 @@ nav a {
   border-bottom: 2px solid;
   border-color: var(--lightgreen);
   color: var(--lightgreen);
+}
+
+/* 
+Footer Section */
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--white);
+  background-color: var(--purple);
+  padding-top: 30px;
+  height: 350px;
+  margin-top: 200px;
+}
+
+.footer__input {
+  max-width: 230px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 2px solid;
+  border-color: var(--white);
+  color: var(--white);
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__subscribe {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  background-color: var(--lightgreen);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 9px 21px;
+}
+
+.footer__subscribe:hover {
+  background-color: #0a6c61;
+}
+
+.footer__info article {
+  color: var(--white);
+}
+
+.mtop {
+  margin-top: 30px;
+}
+
+.footer__button {
+  text-align: center;
+}
+
+.footer__buy {
+  font-size: 18px;
+  line-height: 26px;
+  width: 170px;
+  background-color: var(--pink);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+}
+
+.footer__buy:hover {
+  background-color: #931545;
 }

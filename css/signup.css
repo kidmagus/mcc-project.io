@@ -14,8 +14,8 @@
   height: 1.15em;
   border: none;
   border-radius: 50%;
-  background-color: var(--gray);
-  margin-right: 5px;
+  background-color: var(--purple);
+  margin-right: 10px;
 }
 
 .agreement input[type="checkbox"]:checked {
@@ -59,7 +59,7 @@
   display: none;
 }
 
-.term__footer {
+.term__condition {
   display: flex;
   align-items: center;
   width: 100%;
@@ -67,12 +67,12 @@
   padding: 10px;
 }
 
-.footer__agreement {
+.condition__agreement {
   display: flex;
   column-gap: 5px;
 }
 
-.footer__button button {
+.condition__button button {
   padding: 15px;
   font-size: 16px;
   letter-spacing: 2px;
@@ -82,15 +82,15 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .term__footer {
+  .term__condition {
     flex-direction: column;
   }
 
-  .footer__agreement {
+  .condition__agreement {
     column-gap: 10px;
   }
 
-  .footer__button {
+  .condition__button {
     display: flex;
     flex-direction: row-reverse;
   }
