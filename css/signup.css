@@ -7,8 +7,22 @@
   margin-bottom: 20px;
 }
 
-.agreement__checkbox {
-  border-radius: 20px;
+.agreement input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  width: 1.15em;
+  height: 1.15em;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--gray);
+  margin-right: 5px;
+}
+
+.agreement input[type="checkbox"]:checked {
+  transform-origin: bottom left;
+  border: 10px solid;
+  border-color: var(--lightgreen);
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
 .agreement__info a {
