@@ -146,7 +146,6 @@ Footer Section */
   color: var(--white);
   background-color: var(--purple);
   padding-top: 30px;
-  height: 350px;
   margin-top: 200px;
 }
 
@@ -194,6 +193,10 @@ Footer Section */
   text-align: center;
 }
 
+.footer__button a {
+  text-decoration: underline;
+  color: var(--white);
+}
 .footer__buy {
   font-size: 18px;
   line-height: 26px;
@@ -207,4 +210,15 @@ Footer Section */
 
 .footer__buy:hover {
   background-color: #931545;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__info {
+    display: none;
+  }
 }
