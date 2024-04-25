@@ -1,9 +1,8 @@
 const table = document.querySelector(".table");
-const description = document.querySelectorAll(".description");
 const payment = document.querySelector(".payment");
+const description = document.querySelectorAll(".description");
 const tabTarget = document.querySelectorAll("[data-tab-target]");
 const tabContents = document.querySelectorAll("[data-tab-price]");
-
 const back = document.querySelector(".payment__back-btn");
 
 description.forEach((descriptions) => {
@@ -40,7 +39,6 @@ paypal.addEventListener("click", () => {
   paypalRadio.checked = true;
   if (paypalRadio.checked) {
     paypal.classList.add("chosen");
-    creditRadio.checked = false;
     credit.classList.remove("chosen");
     paypalBtn.classList.add("chosen");
     creditBtn.classList.remove("chosen");
@@ -50,7 +48,6 @@ paypal.addEventListener("click", () => {
 credit.addEventListener("click", () => {
   creditRadio.checked = true;
   if (creditRadio.checked) {
-    paypalRadio.checked = false;
     paypal.classList.remove("chosen");
     credit.classList.add("chosen");
     creditBtn.classList.add("chosen");

@@ -61,10 +61,25 @@
 .footer__button button {
   padding: 15px;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   width: 100px;
   border: none;
   border-radius: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .term__footer {
+    flex-direction: column;
+  }
+
+  .footer__agreement {
+    column-gap: 10px;
+  }
+
+  .footer__button {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .button__cancel {

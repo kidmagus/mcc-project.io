@@ -4,7 +4,7 @@ box.forEach((box) => {
   const boxHead = box.querySelector(".head");
 
   if (boxHead) {
-    boxHead.addEventListener("click", (event) => {
+    boxHead.addEventListener("click", () => {
       box.classList.toggle("expanded");
     });
   }

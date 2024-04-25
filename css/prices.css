@@ -10,23 +10,11 @@
 
 .table {
   display: flex;
-  align-items: center;
-  width: 100%;
 }
 
 .table__container {
   padding: 80px;
   width: 100%;
-}
-
-.box {
-  border: 2px solid;
-  border-radius: 10px;
-  padding: 41px 55px 43px 48px;
-  text-align: center;
-  background-color: var(--purple);
-  color: var(--white);
-  border-color: var(--purple);
 }
 
 @media screen and (max-width: 1200px) {
@@ -40,12 +28,18 @@
   }
 }
 
+.box {
+  border-radius: 10px;
+  padding: 41px 55px 43px 48px;
+  text-align: center;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
 .box__label {
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 2px;
-  text-align: center;
-  display: block;
+  letter-spacing: 4px;
 }
 
 .box__fee {
@@ -54,10 +48,6 @@
   justify-content: center;
   column-gap: 28px;
   white-space: nowrap;
-}
-
-.fee__desc {
-  text-align: center;
 }
 
 .box__desc {
@@ -79,7 +69,6 @@
   align-items: center;
   column-gap: 20px;
   color: var(--gray);
-  text-align: center;
 }
 
 .description__button {
@@ -121,16 +110,16 @@
 
 .payment__chosenplan {
   text-align: center;
-  font-size: 24px;
   color: var(--darkblue);
   font-weight: 600;
 }
 
 .payment__back-btn {
-  font-size: 10px;
+  font-size: 14px;
   color: var(--gray);
   font-weight: 800;
   cursor: pointer;
+  color: var(--gold);
 }
 
 .payment__back-btn:hover {
@@ -241,9 +230,7 @@
 
 .chosen.paypal,
 .chosen.credit {
-  border-color: var(--purple);
   background-color: var(--lightgreen);
-  opacity: 1;
 }
 
 .chosen.checkout {

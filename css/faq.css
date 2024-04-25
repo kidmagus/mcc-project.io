@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.accordion {
+.faq__accordion {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -11,8 +11,8 @@
   border-radius: 20px;
 }
 
-.box {
-  padding: 10px;
+.accordion__box {
+  padding-left: 10px;
   border-bottom: 1px solid gray;
 }
 
@@ -21,6 +21,11 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  opacity: 0.9;
+}
+
+.box__head:hover {
+  opacity: 1;
 }
 
 .head__title {
@@ -32,7 +37,6 @@
   font-size: 24px;
   height: 35px;
   width: 35px;
-
   background-color: var(--purple);
   color: var(--white);
   border-radius: 50%;
