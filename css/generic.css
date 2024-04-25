@@ -146,6 +146,7 @@ Footer Section */
   color: var(--white);
   background-color: var(--purple);
   padding-top: 30px;
+  padding-bottom: 30px;
   margin-top: 200px;
 }
 
@@ -179,6 +180,12 @@ Footer Section */
 
 .main__subscribe:hover {
   background-color: #0a6c61;
+}
+
+.main__box {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 20px;
 }
 
 .footer__info article {
@@ -220,5 +227,10 @@ Footer Section */
 
   .footer__info {
     display: none;
+  }
+
+  .main__box {
+    align-items: center;
+    justify-content: center;
   }
 }
