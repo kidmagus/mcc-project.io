@@ -29,23 +29,20 @@
   margin: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .about__section {
     display: block;
-  }
-
-  .section__grid {
-    margin-right: 0px;
   }
 }
 
 .grid__img {
-  width: 370px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 370px;
   display: block;
 }
 
 .grid__title {
-  display: block;
   color: var(--purple);
   text-transform: uppercase;
   font-weight: 800;
@@ -54,6 +51,5 @@
 }
 
 .grid__info {
-  width: 400px;
   color: var(--gray);
 }

@@ -13,7 +13,7 @@
 }
 
 .table__container {
-  padding: 80px;
+  padding: 100px;
   width: 100%;
 }
 
@@ -25,6 +25,8 @@
   .table__container {
     border-bottom: 2px solid;
     border-color: var(--lightpurple);
+    padding: 0;
+    margin-top: 100px;
   }
 }
 
@@ -54,7 +56,6 @@
   font-weight: 400;
   max-width: 257px;
   margin: 0 auto;
-  color: var(--white);
 }
 
 .description {
@@ -62,6 +63,25 @@
   max-width: 230px;
   text-align: center;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .description {
+    margin-bottom: 100px;
+  }
+  .box__fee {
+    /* flex-direction: column; */
+    display: block;
+  }
+
+  .fee h2,
+  .box__label {
+    color: var(--gold);
+  }
+
+  .fee__desc {
+    margin-top: -28px;
+  }
 }
 
 .description__item {
@@ -81,6 +101,7 @@
   padding: 12px 38px;
   font-size: 18px;
   line-height: 26px;
+  white-space: nowrap;
   text-align: center;
 }
 

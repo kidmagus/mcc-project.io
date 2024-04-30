@@ -36,20 +36,23 @@ body {
   border: 1px solid;
   border-color: var(--gray);
   padding: 12px;
-  width: 370px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .form__submit {
   background-color: var(--lightgreen);
   color: var(--white);
   border-radius: 20px;
-  padding: 10px 120px;
+  padding: 10px 20px;
   border: none;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   margin-bottom: 80px;
   white-space: nowrap;
+  max-width: 190px;
+  width: 100%;
 }
 
 .form__signup {
