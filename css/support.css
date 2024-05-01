@@ -1,11 +1,3 @@
-body {
-  background: url(/mcc-project.io/img/support/bg.jpg);
-}
-
-.navs nav a {
-  color: var(--white);
-}
-
 .support {
   display: flex;
   flex-direction: column;
@@ -27,7 +19,7 @@ body {
 .support__authors {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--white);
+  background-color: var(--lightblue);
   padding: 20px;
   border-radius: 20px;
   max-width: 1280px;
